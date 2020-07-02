@@ -4,7 +4,7 @@ import static longestsequence.ASCIIConstants.LOWERCASE_A_ASCII;
 
 public class LongestSequenceFinder {
 
-    public Tuple<Character, Integer> longestSequence(String text) {
+    public static Tuple<Character, Integer> longestSequence(String text) {
 
         char lastChar = '\0';
         char currentLongest = '\0';
@@ -33,7 +33,7 @@ public class LongestSequenceFinder {
         return new Tuple<>(currentLongest, currentMax);
     }
 
-    private char toLowerCase(char character) {
+    private static char toLowerCase(char character) {
         return character < LOWERCASE_A_ASCII ? (char) (character + 32) : character;
     }
 }

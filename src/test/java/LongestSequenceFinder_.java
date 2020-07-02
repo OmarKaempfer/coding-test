@@ -12,7 +12,7 @@ public class LongestSequenceFinder_ {
     @Test
     @Parameters(method = "getCases")
     public void longestSequence(String text, String expectedTuple) {
-        assertThat(new LongestSequenceFinder().longestSequence(text).toString()).isEqualTo(expectedTuple);
+        assertThat(LongestSequenceFinder.longestSequence(text).toString()).isEqualTo(expectedTuple);
     }
 
     private String[][] getCases() {
