@@ -2,4 +2,4 @@
 
 Maven project:
 
-Each task is in a different package, you can find the unitary tests for each task in the test folder.
+Each task is in a different package, you can find the unit tests for each task in the test folder.
